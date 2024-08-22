@@ -1,0 +1,114 @@
+/* Base styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar .close {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Styling for nav links inside sidebar */
+.sidebar .nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .nav-links li {
+    padding: 10px;
+}
+
+.sidebar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Show hamburger icon only on mobile screens */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+li {
+    cursor: pointer;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .desktop-nav {
+        display: none;
+    }
+    
+    .sidebar {
+        display: block;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* Media query for desktop screens */
+@media (min-width: 601px) {
+    .hamburger {
+        display: none;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+    
+    .desktop-nav {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+    .desktop-nav li {
+        padding: 10px 20px;
+    }
+    
+    .desktop-nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .desktop-nav a:hover {
+        text-decoration: underline;
+    }
+}

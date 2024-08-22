@@ -1,16 +1,11 @@
-
 import React from 'react'
-import Tab from './Pages/resetpassword.jsx'
-
-const App = () => {
+import WeddingForm from './myportfolio/portfolio'
+function App() {
   return (
     <div>
-
-      <Tab/>
-      
+      <WeddingForm/>
     </div>
   )
 }
 
 export default App
-
