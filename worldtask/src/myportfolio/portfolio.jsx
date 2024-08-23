@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../pages/button.css';
+// import '../pages/button.css';
 import IMG from '../image/sathesh.jpg';
 import IMG1 from '../image/sathish1.jpg';
 import IMG4 from '../image/sathish4.jpg';
