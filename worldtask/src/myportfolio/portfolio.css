@@ -103,7 +103,7 @@ General Styles
   background-clip: text; /* Standard property for other browsers */
   animation: animate8345 9s linear infinite;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 65px;
   letter-spacing: 10px;
   margin-top: -6px;
 }
@@ -113,7 +113,7 @@ General Styles
   font-size: 24px;
   color: white;
   font-weight: bold;
-  margin-top: -70px;
+  margin-top: -40px;
 }
 
 .button {
@@ -132,7 +132,7 @@ General Styles
   overflow: hidden;
   box-shadow: 0 0 0 0 transparent;
   transition: all 0.2s ease-in;
-  margin-left: 41%;
+  margin-left: 40%;
 }
 
 .button:hover {
@@ -374,8 +374,8 @@ General Styles
 .s-images2,
 .s-images3,
 .s-images4 {
-  width: 200px;
-  height: 200px;
+  width: 50%;
+  height: 50%;
   margin: 10px;
 }
 
@@ -478,7 +478,7 @@ li {
   .sidebar {
       display: block;
       height: 200px;
-      width: 200px;
+      width: 300px;
       z-index: 1;
   }
 }
@@ -511,9 +511,16 @@ li {
   .desktop-nav a:hover {
       text-decoration: underline;
   }
+  .button{
+    margin-left: 40%;
+  }
+
+  .loader{
+    font-size: 100px;
+  }
 }
 
-@media (min-width: 350px) {
+/* @media (min-width: 350px) {
   .bg {
     width: 100%;
   }
@@ -556,11 +563,12 @@ li {
     height: 300px;
   }
   
-}
-@media (max-width: 350px) {
+} */
+@media  (min-width: 350px) {
     .bg {
       width: 100%;
       max-width: 100%;
+      overflow-x: hidden;
     }
     
     .container {
@@ -600,11 +608,41 @@ li {
       width: 300px;
       height: 300px;
     }
+    .services-matter{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .matter-div1{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .matter-div2{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .matter-div3{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .matter-div4{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+.s-images1,
+.s-images2,
+.s-images3,
+.s-images4 {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
     
   }
 
 
-@media (min-width: 576px) {
+  @media (min-width: 576px) {
   .container {
     height: 600px;
   }
@@ -624,16 +662,23 @@ li {
   .matter-div2,
   .matter-div3,
   .matter-div4 {
-    width:30%;
+    width: 100%;
+    margin-bottom: 20px;
   }
   
   .s-images1,
   .s-images2,
   .s-images3,
   .s-images4 {
-    width: 80px;
-    height: 80px;
+    width: 500px;
+    height: 500px;
     margin: 5px;
+  }
+  .services-matter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   
 }
@@ -725,4 +770,5 @@ li {
     width: 600px;
     height: 600px;
   }
+ 
 }

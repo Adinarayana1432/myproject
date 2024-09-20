@@ -102,6 +102,7 @@ function Home() {
               AMBITION IS THE FIRST STEP TOWARDS
             </p>
             <h1 className='loader'>SUCCESS</h1>
+          
             <p className='success-p1-tag'>Now Available for Online Coaching</p>
             <button className='button'>Book Now</button>
           </div>
@@ -154,6 +155,23 @@ function Home() {
               <p>My journey into photography began [X years ago/at a young age] when I first picked up a camera and saw the world through a new perspective. What started as a hobby quickly evolved into a full-fledged career. Over the years, I’ve honed my skills through [formal education/mentorship/self-study], and my work has been featured in [publications/galleries/online platforms].</p>
             </div>
             </div>
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
            
            
 
